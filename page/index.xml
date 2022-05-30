@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on The Metamodel Blog</title>
+    <link>https://metamodel.blog/page/</link>
+    <description>Recent content in Pages on The Metamodel Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>r@saravanan.us (R. Saravanan)</managingEditor>
+    <webMaster>r@saravanan.us (R. Saravanan)</webMaster>
+    <lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metamodel.blog/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eBook</title>
+      <link>https://metamodel.blog/page/ebook/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      <author>r@saravanan.us (R. Saravanan)</author>
+      <guid>https://metamodel.blog/page/ebook/</guid>
+      <description>This blog can be downloaded as an eBook using the ePUB or PDF format for offline reading using an e-reader:
+  Most recent posts: ePUB / PDF
+  All posts: ePUB / PDF
+  These eBooks are automatically updated every time a new article is posted.
+Each individual article may also be downloaded as an ePUB or PDF. Look for download buttons below the subtitle of each article.</description>
+    </item>
+    
+    <item>
+      <title>About this blog</title>
+      <link>https://metamodel.blog/page/about/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      <author>r@saravanan.us (R. Saravanan)</author>
+      <guid>https://metamodel.blog/page/about/</guid>
+      <description>Metamodel: a model that consists of statements about models.
+This is a blog about the language, science, and philosophy of predictive modeling. The aim is to be more whimsical than polemical, and mostly non-technical. The discussions will generally be about climate models, which are arguably the most complex models ever built. But models from related fields will make a guest appearance now and then. The discussions will frequently venture beyond science because prediction of long-term climate change is now so intertwined with the cultural milieu that it is impossible to discuss it within a purely scientific context.</description>
+    </item>
+    
+    <item>
+      <title>Blog Policy</title>
+      <link>https://metamodel.blog/page/policy/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      <author>r@saravanan.us (R. Saravanan)</author>
+      <guid>https://metamodel.blog/page/policy/</guid>
+      <description>Disclaimer Rights Commenting Privacy  Disclaimer This is a personal blog. The opinions expressed here are my own and do not in any way represent the official opinions of my employer.
+Commenting To provide feedback on any post, you have two options:
+  You can use Twitter to simply reply to the tweet announcing the blog post, which is displayed at the end of each post.
+  If you don&amp;rsquo;t wish to use a tweet for your comment, or if your comment is too long, you can comment on the post at metamodel.</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://metamodel.blog/page/links/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      <author>r@saravanan.us (R. Saravanan)</author>
+      <guid>https://metamodel.blog/page/links/</guid>
+      <description>Substack mirror of this blog  Personal
+  Website
+  Book page
+  Twitter profile
+  A few other climate modeling blogs
+  Real Climate
+  …and Then There&amp;rsquo;s Physics
+  Serendipity
+  Bryan Lawrence&amp;rsquo;s Blog
+  Isaac Held&amp;rsquo;s Blog
+  Podcasts related to climate prediction
+ Deep Convection  Useful climate resources
+ CarbonBrief.org Reporting extreme weather and climate change: A guide for journalists (WorldWeatherAttribution.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meritocracy on The Metamodel Blog</title>
+    <link>https://metamodel.blog/tags/meritocracy/</link>
+    <description>Recent content in meritocracy on The Metamodel Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>r@saravanan.us (R. Saravanan)</managingEditor>
+    <webMaster>r@saravanan.us (R. Saravanan)</webMaster>
+    <lastBuildDate>Tue, 10 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metamodel.blog/tags/meritocracy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to judge a model beauty contest?</title>
+      <link>https://metamodel.blog/posts/model-meritocracy/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      <author>r@saravanan.us (R. Saravanan)</author>
+      <guid>https://metamodel.blog/posts/model-meritocracy/</guid>
+      <description>Every 6&amp;ndash;7 years, major climate modeling centers around the world submit their climate simulations to an organization called the Coupled Model Intercomparison Project (CMIP). CMIP distributes the simulation data so that scientists around the world can analyze and compare the models. But what criteria should we use to judge or rank models? How do you decide whether one model is better than another? Do we care about superficial beauty or inner beauty?</description>
+    </item>
+    
+  </channel>
+</rss>

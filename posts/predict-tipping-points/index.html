@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.ico">
+
+
+
+  <title>
+    Can we predict global climate tipping points? - The Metamodel Blog
+  </title>
+  <meta name="description" content="Nonlinearity generates tipping points, but it also make them hard to predict" />
+  <meta name="author" content="R. Saravanan" />
+  <meta name="generator" content="Hugo 0.92.0" />
+
+<style>
+  ul.mobile-menu { z-index: 99999; }
+</style>
+
+  
+  
+  <link rel="stylesheet" href="/sass/socialshare.css" /><link
+    rel="stylesheet"
+    href="/css/styles.min.ceb0c61d9e7a34ea959ed1e296a01af1db6f3a87bf3972472f6ed9b5cc183a8e.css"
+    integrity="sha256-zrDGHZ56NOqVntHilqAa8dtvOoe/OXJHL27ZtcwYOo4="
+  />
+  
+  
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://metamodel.blog/posts/predict-tipping-points/image/worlds-end-card.jpg" />
+<meta property="og:image" content="https://metamodel.blog/posts/predict-tipping-points/image/worlds-end-card.jpg" />
+
+<meta name="twitter:site" content="metamodel.blog" />
+<meta name="twitter:creator" content="R. Saravanan" />
+
+<meta name="twitter:title" content="Can we predict global climate tipping points?" />
+<meta property="og:title" content="Can we predict global climate tipping points?" />
+<meta property="og:url" content="/posts/predict-tipping-points/" />
+
+
+<meta name="twitter:description" content=" Nonlinearity generates tipping points, but it also make them hard to predict " />
+<meta property="og:description" content=" Nonlinearity generates tipping points, but it also make them hard to predict " />
+
+
+  <meta itemprop="name" content="Can we predict global climate tipping points?">
+<meta itemprop="description" content="Nonlinearity generates tipping points, but it also make them hard to predict"><meta itemprop="datePublished" content="2022-05-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1541">
+<meta itemprop="keywords" content="Explainer,threshold,tipping point,1.5 degrees,net-zero," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  
+  <a href="/" class="capitalize font-extrabold text-2xl">
+    <img src="/metamodel-banner.png" alt="The Metamodel Blog" class="h-8 max-w-full" />
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/posts">Posts</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/page/ebook">eBook</a></li>
+    
+    <li><a href="/page/about">About</a></li>
+    
+    <li><a href="/page/links">Links</a></li>
+    
+    <li><a href="/page/policy">Policy</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+
+&nbsp;
+<div class="social-share" class="padding-right:20px">
+  <span class="px-4" style="float: left;">&nbsp;</span>
+  
+    
+  
+  
+    
+      <span style="float: left; font-size: 1.4rem; line-height: 1.1rem; color: #008aee;"> 
+      <a class="link-reverse" href="/posts/model-meritocracy/?ref=header">&nbsp;»&nbsp;</a>
+      </span>
+    
+  
+
+  <span>&nbsp; &nbsp; &nbsp;</span>
+  
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmetamodel.blog%2fposts%2fpredict-tipping-points%2f" target="_blank"
+  class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600
+  dark:hover:border-gray-300 dark:hover:text-gray-300"
+  >
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30" height="30" viewBox="0 50 470.513 420.513" >
+<g transform="translate(0,110) scale(0.8)">
+	<path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853   c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691   c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z" fill="#4267B2"/>
+</g>
+</svg>
+</a>
+
+
+<a href="mailto:?subject=Can%20we%20predict%20global%20climate%20tipping%20points%3f&body=Check out this article on Can%20we%20predict%20global%20climate%20tipping%20points%3f: https%3a%2f%2fmetamodel.blog%2fposts%2fpredict-tipping-points%2f" target="_blank"
+class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300
+dark:hover:text-gray-300"
+>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 114 114" >
+<g transform="translate(0,12) scale(1.05)">
+<path stroke="#4267B2" stroke-width="7" fill="none" d="m7,20h98v72H7zl44,44q5,4 10,0l44-44M7,92l36-36m26,0 36,36"/>
+</g>
+</svg>
+</a>
+
+          <a href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fmetamodel.blog%2fposts%2fpredict-tipping-points%2f&title=Can%20we%20predict%20global%20climate%20tipping%20points%3f" target="_blank"
+         class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600
+dark:hover:border-gray-300 dark:hover:text-gray-300"
+>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2867B2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+<g transform="translate(0,1) scale(1.1)">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</g>
+          </svg>
+        </a>
+
+
+  <a href="https://twitter.com/intent/retweet?tweet_id=1521470466963251201"
+  target="_blank"
+  class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600
+  dark:hover:border-gray-300 dark:hover:text-gray-300"
+  >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke-width="1.0"
+            stroke="currentColor"
+            fill="#00acee"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+          <g transform="translate(0,3) scale(0.95)">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </g>
+          </svg>
+  </a>
+
+       
+
+</div>
+<br>
+
+  
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="/posts/predict-tipping-points/image/worlds-end.jpg" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white bg-opacity-90 dark:bg-opacity-80 text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    May 3, 2022
+  
+
+
+    </div>
+  </div>
+  
+
+    <h1 class="text-2xl font-bold mb-2">Can we predict global climate tipping points?</h1>
+    <div class="text-xl font-light mb-4">Nonlinearity generates tipping points, but it also make them hard to predict</div>
+
+
+    
+      
+    
+
+
+    <h5 class="text-sm flex items-center">
+
+    
+    <a href='/ebook/20220503-predict-tipping-points.epub'
+       target="_blank"
+       style="color: #555555; border-radius: 5px 5px 5px 5px; text-decoration: none; font-weight: inherit; font-size: 0.875rem; line-height: 1.25rem;"
+       class="inline-block text-sm cursor-pointer bg-gray-200 dark:bg-gray-200"
+    >
+    &nbsp;ePUB&nbsp;
+    </a>
+     &nbsp; &bull;
+
+
+    
+    &nbsp;
+    <a href='/ebook/20220503-predict-tipping-points.pdf'
+       target="_blank"
+       style="color: #555555; border-radius: 5px 5px 5px 5px; text-decoration: none; font-weight: inherit; font-size: 0.875rem; line-height: 1.25rem;"
+       class="inline-block text-sm cursor-pointer bg-gray-200 dark:bg-gray-200"
+    >
+    &nbsp;PDF&nbsp;
+    </a>
+     &nbsp; &bull;
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      8&nbsp;m
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      1541&nbsp;w &bull;
+      
+
+       <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" stroke-width="2.5" stroke="currentColor" viewBox="0 0 50 50"><path d="M15 42h-2l1.2-1.6c.8-1.1 1.3-2.5 1.6-4.2C10.8 33.9
+8 29.6 8 24c0-8.6 6.5-14 17-14s17 5.4 17 14c0 8.8-6.4 14-17 14h-.7c-1.6 1.9-4.4 4-9.3 4zm10-30c-9.4 0-15 4.5-15 12 0 6.4
+3.9 9.4 7.2 10.7l.7.3-.1.8c-.2 1.6-.5 3-1.1 4.2 3.3-.4 5.2-2.1 6.3-3.5l.3-.4H25c13.5 0 15-8.4 15-12C40 16.5 34.4 12 25
+12z"/></svg>
+
+    <a href="#comments"
+       style="color: #555555; border-radius: 5px 5px 5px 5px; text-decoration: none; font-weight: inherit; font-size: 0.875rem; line-height: 1.25rem;"
+       class="inline-block text-sm cursor-pointer bg-gray-200 dark:bg-gray-200"
+    >
+    &nbsp;<span class="remark42__counter" data-url="https://metamodel.blog/posts/predict-tipping-points/"></span>&nbsp;comments&nbsp;
+    </a>
+
+    </h5>
+
+    <p>If the globe warms slightly beyond 2°C, will we cross a climate tipping point that leads to runaway warming or catastrophe? Are we doomed if we <a href="https://theconversation.com/why-protesters-should-be-wary-of-12-years-to-climate-breakdown-rhetoric-115489">don&rsquo;t stop the warming by 2030</a> (or 2050)? Predictions of imminent climate tipping points often <a href="https://www.theguardian.com/commentisfree/2021/sep/09/earths-tipping-points-closer-current-climate-plans-wont-work-global-heating">capture the imagination</a> of the media and the public. Aren&rsquo;t the harmful consequences of a steadily warming climate and its effect on extreme weather bad enough to spur action? Do we need even more things to worry about?</p>
+<p>One reason to worry about new dangers is that we may need to take additional preventive action. But the solution to avoid crossing potential tipping points is exactly the same as the solution to mitigate steady climate change: reduce carbon emissions as quickly as possible to stay close to our current climate equilibrium.</p>
+<p>Another reason to talk about potential tipping points is that it can help underscore the urgency for mitigating action. But it would be better to discuss tipping points in general terms, without implying that there are precise global warming thresholds or mitigation time intervals. Numbers associated with tipping points typically come with many caveats about the uncertainties. If the caveats are lost in translation to the public, the numbers can end up feeding into doomist narratives predicated on faux certainty.</p>
+<p>Dystopian headlines about doomsday glaciers and methane bombs attract attention and may perhaps spur more climate activism in some people. Casual talk of climate tipping points as if they were imminent can push other people past real emotional tipping points. This can result in debilitating <a href="https://www.nytimes.com/2021/07/23/well/mind/mental-health-climate-anxiety.html">climate anxiety</a> and passive sharing of <a href="https://theconversation.com/the-notion-of-death-is-very-present-what-we-can-learn-about-eco-anxiety-from-memes-170666">&ldquo;doomer memes&rdquo;</a>, rather than activism.</p>
+<p>Climate tipping points are associated with <em>amplifying</em> (or positive) feedbacks that make for a dramatic story. An example is the ice-albedo feedback, which goes like this: unusually warm conditions; more ice melts; less sunlight reflected; more heating and warmth; rinse, repeat. In a geologic instant (i.e., centuries to millennia), we end up with a hot, ice-free planet. Sounds rather scary. But surely we have had some unusually warm summers over the past several thousands of years which could have triggered this feedback. Why aren&rsquo;t we already ice-free?</p>
+<p>That&rsquo;s because there&rsquo;s more happening behind the dramatic scenes of an amplifying feedback. There are <em>stabilizing</em> or negative feedbacks that act to counter it. The simplest one goes like this: unusually warm conditions; planet emits more heat; planet cools down; end of story. The stabilizing feedbacks don&rsquo;t garner much media attention because they are banal, but they collectively overwhelm the amplifying feedbacks and keep the climate stable. If amplifying feedbacks are swashbuckling pirates, stabilizing feedbacks are the boring navy that keeps them in check.</p>
+<p>While our climate has been stable for the last ten thousand years, paleoclimatic data tell us that it has undergone abrupt changes before that (by geologic standards).<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The worry then is that future global warming may disrupt the balance between amplifying and stabilizing feedbacks, resulting in an amplifying feedback that &ldquo;runs away&rdquo; unfettered, at least for a while until the stabilizing feedbacks catch up. Will this happen at 2°C of global warming, 3°, 5°, or beyond? The complex IPCC models suggest that the answer is &ldquo;beyond&rdquo;, but these models aren&rsquo;t perfect and may not capture the slow amplifying feedbacks well. We can build simplified models to understand the amplifying feedbacks that generate tipping points, but these simpler models may not capture all the stabilizing feedbacks accurately. This precludes attaching specific numeric global thresholds or dates to climate tipping points that may lie in our future.</p>
+<p>We know there are absolute local temperature thresholds that are relevant to current and future climates. An important one has to with the human body. A metric called <a href="https://www.pnas.org/doi/10.1073/pnas.0913352107">wet-bulb temperature</a>, that combines temperature and humidity, is used as a measure of heat stress on humans. Extended periods with wet-bulb temperatures exceeding about 35°C would be intolerable for humans. (The wet-bulb temperature threshold is lower than the normal human body temperature of 37°C because the body cools itself by sweating and transferring heat to cooler surroundings.)</p>
+<p>Human society has adapted to a certain range of temperatures and departing from these temperatures causes harmful impacts. Some regions of the global are closer to the absolute wet-bulb temperature threshold than others, and the anthropogenic warming itself varies regionally. Therefore, the relative warming thresholds for harmful impacts will vary with the region. There are also other region-specific temperature thresholds that affect agricultural and ecological systems. For example, corals are very sensitive to the ambient temperatures. Ice sheets and permafrost also respond to regional temperatures.</p>
+<p>Will continued regional warming cause the climate to soon cross a global tipping point? Nonlinearity in the climate system is often touted as a reason to be concerned about tipping points, because a nonlinear system can potentially switch between multiple equilibrium states. But nonlinearity is a double-edged sword: it adds interesting threshold behavior to a system, but it also takes away predictability. As Edward Lorenz showed using a simple model of deterministic chaos, nonlinear error growth can lead to rapid loss of predictive skill. Chaos associated with fast processes like weather reaches saturation for climate prediction, and can be quantified as stochastic noise or &ldquo;certain uncertainty&rdquo;.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> But this does not apply to slow climate processes like melting ice sheets and thawing permafrost, which are in the realm of &ldquo;uncertain uncertainty&rdquo;. The initial conditions and the governing equations associated with these slow processes are poorly known. This means that nonlinear error growth will make it hard to accurately predict if and when any tipping points associated with these processes will be crossed.</p>
+<p>Nonlinearity also prevents us from aggregating different local warming thresholds to come up with a single global warming threshold. Local thresholds associated with amplifying feedbacks can be studied using relatively simple models, but to answer the global question, we must use comprehensive global climate models. These models compute the combined impact of many different regional processes. When we add together many different nonlinearities in a complex system, the different nonlinear transitions can get smeared out, making the global system respond in a &ldquo;near-linear&rdquo; fashion with increasing emissions. This can help explain why the IPCC models do not predict that we will cross any tipping point soon, even as they predict that global warming and its impacts will get much worse without mitigation.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Consider global average surface temperature, which often figures in discussions of tipping points. It is the most commonly used measure to characterize climate change, although it may <a href="https://www.gfdl.noaa.gov/blog_held/58-addicted-to-global-mean-temperature/">not be the scientifically most discerning metric</a>. Models can estimate the relative trend in the global temperature with fairly good accuracy to simulate the observed warming (Figure 1, line). But the errors in the absolute global average temperature in model simulations are rather high (Figure 1, sidebar). Among different global climate models, the absolute global average temperature can range between 13°C and 15°C. For one model, 2°C warming means warming globally from 13°C to 15°C, whereas for another model, it means warming from 15°C to 17°C. Since a global 2°C warming translates into different local warming for different models and different regions, it is not possible to identify a hard global warming threshold for catastrophic impacts using current models. All we can say is that if the globe continues to warm, the risk of catastrophic local damage will increase rapidly.</p>
+<p><img src="image/palmer-stevens-pnas2019.jpg" alt="">
+<strong>Figure 1.</strong>
+<em>Estimates of global-average surface temperature anomaly from model integrations performed in support of the fifth phase of the coupled model intercomparison project (CMIP5). Here, the observed anomaly (black) is estimated relative to the observed absolute time-average, while the model anomalies are estimated relative to each model’s absolute time-average. Colored lines represent different models, with thick red denoting the model average, and the vertical dashed line denote volcanic eruptions. The small bar to the right of the figure shows the range of absolute global and time averaged model temperatures for the period 1961 to 1990. <a href="https://www.pnas.org/doi/10.1073/pnas.1906691116">From Palmer and Stevens (2019)</a></em></p>
+<p>Global climate models do not predict a climate cliff’s edge located at specific numbers like 1.5 or 2°C of warming, or by specific dates. But the higher levels of global warming predicted for unmitigated emissions can lead to unbearably harsh weather and climate in many regions, even without crossing any tipping points. Climate harm is more likely to occur by a thousand cuts rather than in one fell swoop. Any planetary warming threshold for tipping points that we can identify will be fuzzy. Does that mean we should worry less about exceeding 2°C global warming, because the local thresholds may be further away than we think? Not quite. A fuzzier global threshold also means that local thresholds for harmful impacts may be closer than we think. So, we need to act as quickly as we can to eliminate carbon emissions.</p>
+<p>(<em>Top image adapted from the poster for <a href="https://movies.disney.com/pirates-of-the-caribbean-at-worlds-end">Pirates of the Caribbean: At World&rsquo;s End</a>, using the <a href="https://www.dafont.com/pieces-of-eight.font">Pieces of Eight</a> font for the overlay text.</em>)</p>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li>
+<p><a href="https://metamodel.blog/posts/why-round-numbers/">Why are the (climate) numbers so round?</a> (Metamodel blog)</p>
+</li>
+<li>
+<p><a href="https://andthentheresphysics.wordpress.com/2020/02/23/debate-about-communicating-tipping-points/">Debate about communicating tipping points</a> (And Then There&rsquo;s Physics)</p>
+</li>
+<li>
+<p><a href="https://www.realclimate.org/index.php/archives/2006/07/runaway-tipping-points-of-no-return/">Runaway tipping points of no return</a> (RealClimate.org)</p>
+</li>
+<li>
+<p><a href="https://www.gfdl.noaa.gov/blog_held/68-superrotation-idealized-models-and-gcms/">Superrotation, idealized models, and GCMs</a> (Isaac Held)</p>
+</li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter_01.pdf">IPCC AR6 WG1 report, Chapter 1: Framing, context, methods</a>. p. 66&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020EF001854">Certain Uncertainty: The Role of Internal Climate Variability in Projections of Regional Climate Change and Risk Management</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </article>
+
+<hr>
+
+  
+  
+  
+
+  
+  
+  <div class="mt-2 mb-4 ml-6 mr-6">
+    <a class="link-reverse" href="/posts/model-meritocracy/?ref=footer">
+    <span class="px-8 py-3 rounded transition-colors text-gray-500 dark:text-gray-400">» Next:
+    <span class="text-gray-800 dark:text-gray-200">
+	 How to judge a model beauty contest?
+    </span>
+    </span>
+    </a>
+  </div>
+  
+  <div class="mb-4 ml-6 mr-6"> <span class="px-8 py-3 rounded transition-colors text-gray-500 dark:text-gray-400">
+    <em>
+
+    To be reliably informed of new posts, please follow using Substack (email newsletter), Feedly (blog aggregator), or
+    other RSS feed option below. Alternatively, you can just check this website once every two weeks or so.  (If you
+    only follow me on Twitter, you may not always see my tweets announcing new posts due to the algorithmic ranking policy.)
+    
+    </em>
+  </span>
+</div>
+
+  <div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-1 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl mb-2">Follow:</div>
+      <p class="opacity-60"></p>
+    </div>
+    <ul class="flex">
+      
+      <li>
+        <a
+          href="https://substack.metamodel.blog"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      Substack (substack.metamodel.blog)
+        </a>
+      </li>
+      
+
+      <li>
+        <a
+          href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmetamodel.blog%2Findex.xml"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      Feedly
+        </a>
+      </li>
+
+      
+      <li>
+        <a
+          href="https://metamodel.blog//index.xml"
+          target="_blank"
+          rel="noopener"
+          aria-label="RSS"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      RSS
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a
+          href="https://twitter.com/rsarava"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      Twitter (@RSarava)
+        </a>
+      </li>
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+  &nbsp; 
+  <div class="container px-6 py-1 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="text-2xl mb-2" style="color: #1DA1F2">Short comments via Twitter (click on tweet shown below to reply):</div>
+  </div>
+  <blockquote id="tweet-container" class="twitter-tweet"></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+  window.onload = function () {
+  const isDark = localStorage.getItem('darkmode');
+  twttr.widgets.createTweet(
+    '1521470466963251201', 
+    document.getElementById('tweet-container'),
+    {
+      align: 'center',
+      dnt: 'true',
+      cards: 'hidden',
+      theme: (isDark && isDark === 'dark') ? 'dark' : ''
+    }
+  );
+  };
+  </script>
+  &nbsp; 
+  
+
+  
+  <div id="comments" class="container px-6 py-1 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="text-2xl mb-2">Long comments (needs login):</div>
+  </div>
+
+  <div id="remark42" class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4"></div>
+  
+
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+  This website was generated using open-source
+  <a href="https://gohugo.io/"><em>Hugo</em></a> software, with a
+  <a href="https://github.com/mitotic/metablog"><em>customized</em></a> version 
+  of the
+  <a href="https://github.com/apvarun/blist-hugo-theme"><em>Blist</em></a>
+  theme.
+ 
+    
+    Copyright © 2022 - R. Saravanan.
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://metamodel.blog/js/scripts.min.js"></script>
+
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F0HRT3X34B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F0HRT3X34B', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+    if (window.REMARK42 && window.REMARK42.changeTheme) window.REMARK42.changeTheme(localStorage.getItem('darkmode'));
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+}
+
+  
+  document.querySelector('.open-search').addEventListener('click', mobileWorkaround); 
+  document.querySelector('.toggle-dark-mode').addEventListener('click', mobileWorkaround); 
+  function mobileWorkaround() {
+     toggleMenu();
+  }
+
+</script>
+
+
+<script>
+  var remark_config = {
+    host: "https://metamodel.blog/remark42",
+    site_id: "remark42.metamodel.blog",
+    url: "https://metamodel.blog/posts/predict-tipping-points/",
+    components: ['embed', 'counter'],
+  };
+  remark_config.theme = localStorage.getItem('darkmode') ? localStorage.getItem('darkmode') : 'light';
+
+  (function(c) {
+    for(var i = 0; i < c.length; i++){
+      var d = document, s = d.createElement('script');
+      s.src = remark_config.host + '/web/' + c[i] +'.js'; 
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
+  })(remark_config.components || ['embed']);
+</script>
+
+</body>
+</html>

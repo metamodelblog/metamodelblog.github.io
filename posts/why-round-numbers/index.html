@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.ico">
+
+
+
+  <title>
+    Why are the (climate) numbers so round? - The Metamodel Blog
+  </title>
+  <meta name="description" content="Climate target numbers are approximate. Their roundness reflects that." />
+  <meta name="author" content="R. Saravanan" />
+  <meta name="generator" content="Hugo 0.92.0" />
+
+<style>
+  ul.mobile-menu { z-index: 99999; }
+</style>
+
+  
+  
+  <link rel="stylesheet" href="/sass/socialshare.css" /><link
+    rel="stylesheet"
+    href="/css/styles.min.ceb0c61d9e7a34ea959ed1e296a01af1db6f3a87bf3972472f6ed9b5cc183a8e.css"
+    integrity="sha256-zrDGHZ56NOqVntHilqAa8dtvOoe/OXJHL27ZtcwYOo4="
+  />
+  
+  
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://metamodel.blog/posts/why-round-numbers/image/round-numbers-card.png" />
+<meta property="og:image" content="https://metamodel.blog/posts/why-round-numbers/image/round-numbers-card.png" />
+
+<meta name="twitter:site" content="metamodel.blog" />
+<meta name="twitter:creator" content="R. Saravanan" />
+
+<meta name="twitter:title" content="Why are the (climate) numbers so round?" />
+<meta property="og:title" content="Why are the (climate) numbers so round?" />
+<meta property="og:url" content="/posts/why-round-numbers/" />
+
+
+<meta name="twitter:description" content=" Climate target numbers are approximate. Their roundness reflects that. " />
+<meta property="og:description" content=" Climate target numbers are approximate. Their roundness reflects that. " />
+
+
+  <meta itemprop="name" content="Why are the (climate) numbers so round?">
+<meta itemprop="description" content="Climate target numbers are approximate. Their roundness reflects that."><meta itemprop="datePublished" content="2022-05-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-05-24T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1971">
+<meta itemprop="keywords" content="Explainer,threshold,1.5 degrees,net-zero," />
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  
+  <a href="/" class="capitalize font-extrabold text-2xl">
+    <img src="/metamodel-banner.png" alt="The Metamodel Blog" class="h-8 max-w-full" />
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/posts">Posts</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/page/ebook">eBook</a></li>
+    
+    <li><a href="/page/about">About</a></li>
+    
+    <li><a href="/page/links">Links</a></li>
+    
+    <li><a href="/page/policy">Policy</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header><main class="flex-1">
+  
+  
+
+  
+
+&nbsp;
+<div class="social-share" class="padding-right:20px">
+  <span class="px-4" style="float: left;">&nbsp;</span>
+  
+    
+      <span style="float: left; font-size: 1.4rem; line-height: 1.1rem; color: #008aee;">
+      <a class="link-reverse" href="/posts/model-meritocracy/?ref=header">&nbsp;«&nbsp;</a>
+      </span>
+    
+  
+  
+    
+  
+
+  <span>&nbsp; &nbsp; &nbsp;</span>
+  
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmetamodel.blog%2fposts%2fwhy-round-numbers%2f" target="_blank"
+  class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600
+  dark:hover:border-gray-300 dark:hover:text-gray-300"
+  >
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30" height="30" viewBox="0 50 470.513 420.513" >
+<g transform="translate(0,110) scale(0.8)">
+	<path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853   c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691   c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z" fill="#4267B2"/>
+</g>
+</svg>
+</a>
+
+
+<a href="mailto:?subject=Why%20are%20the%20%28climate%29%20numbers%20so%20round%3f&body=Check out this article on Why%20are%20the%20%28climate%29%20numbers%20so%20round%3f: https%3a%2f%2fmetamodel.blog%2fposts%2fwhy-round-numbers%2f" target="_blank"
+class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300
+dark:hover:text-gray-300"
+>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 114 114" >
+<g transform="translate(0,12) scale(1.05)">
+<path stroke="#4267B2" stroke-width="7" fill="none" d="m7,20h98v72H7zl44,44q5,4 10,0l44-44M7,92l36-36m26,0 36,36"/>
+</g>
+</svg>
+</a>
+
+          <a href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fmetamodel.blog%2fposts%2fwhy-round-numbers%2f&title=Why%20are%20the%20%28climate%29%20numbers%20so%20round%3f" target="_blank"
+         class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600
+dark:hover:border-gray-300 dark:hover:text-gray-300"
+>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2867B2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+<g transform="translate(0,1) scale(1.1)">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+</g>
+          </svg>
+        </a>
+
+
+  <a href="https://twitter.com/intent/retweet?tweet_id=1529081032124813312"
+  target="_blank"
+  class="inline-block hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600
+  dark:hover:border-gray-300 dark:hover:text-gray-300"
+  >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke-width="1.0"
+            stroke="currentColor"
+            fill="#00acee"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+          <g transform="translate(0,3) scale(0.95)">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </g>
+          </svg>
+  </a>
+
+       
+
+</div>
+<br>
+
+  
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="/posts/why-round-numbers/image/round-numbers.png" class="rounded-lg shadow-sm w-full object-contain" />
+    <div class="absolute top-4 right-8 rounded shadow bg-white bg-opacity-90 dark:bg-opacity-80 text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    May 24, 2022
+  
+
+
+    </div>
+  </div>
+  
+
+    <h1 class="text-2xl font-bold mb-2">Why are the (climate) numbers so round?</h1>
+    <div class="text-xl font-light mb-4">Climate target numbers are approximate. Their roundness reflects that.</div>
+
+
+    
+      
+    
+
+
+    <h5 class="text-sm flex items-center">
+
+    
+    <a href='/ebook/20220524-why-round-numbers.epub'
+       target="_blank"
+       style="color: #555555; border-radius: 5px 5px 5px 5px; text-decoration: none; font-weight: inherit; font-size: 0.875rem; line-height: 1.25rem;"
+       class="inline-block text-sm cursor-pointer bg-gray-200 dark:bg-gray-200"
+    >
+    &nbsp;ePUB&nbsp;
+    </a>
+     &nbsp; &bull;
+
+
+    
+    &nbsp;
+    <a href='/ebook/20220524-why-round-numbers.pdf'
+       target="_blank"
+       style="color: #555555; border-radius: 5px 5px 5px 5px; text-decoration: none; font-weight: inherit; font-size: 0.875rem; line-height: 1.25rem;"
+       class="inline-block text-sm cursor-pointer bg-gray-200 dark:bg-gray-200"
+    >
+    &nbsp;PDF&nbsp;
+    </a>
+     &nbsp; &bull;
+
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      10&nbsp;m
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      1971&nbsp;w &bull;
+      
+
+       <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" stroke-width="2.5" stroke="currentColor" viewBox="0 0 50 50"><path d="M15 42h-2l1.2-1.6c.8-1.1 1.3-2.5 1.6-4.2C10.8 33.9
+8 29.6 8 24c0-8.6 6.5-14 17-14s17 5.4 17 14c0 8.8-6.4 14-17 14h-.7c-1.6 1.9-4.4 4-9.3 4zm10-30c-9.4 0-15 4.5-15 12 0 6.4
+3.9 9.4 7.2 10.7l.7.3-.1.8c-.2 1.6-.5 3-1.1 4.2 3.3-.4 5.2-2.1 6.3-3.5l.3-.4H25c13.5 0 15-8.4 15-12C40 16.5 34.4 12 25
+12z"/></svg>
+
+    <a href="#comments"
+       style="color: #555555; border-radius: 5px 5px 5px 5px; text-decoration: none; font-weight: inherit; font-size: 0.875rem; line-height: 1.25rem;"
+       class="inline-block text-sm cursor-pointer bg-gray-200 dark:bg-gray-200"
+    >
+    &nbsp;<span class="remark42__counter" data-url="https://metamodel.blog/posts/why-round-numbers/"></span>&nbsp;comments&nbsp;
+    </a>
+
+    </h5>
+
+    <p><strong>Note to non-UK readers</strong>: <em>No. 10, Downing Street is the official residence of the UK Prime Minister (like 1600 Pennsylvania Avenue for the US President). No. 11, Downing Street is the official residence of the Chancellor of the Exchequer, often considered the second-most powerful position (rather like the Vice President in the US, but with specific responsibilities similar to the Treasury Secretary).</em></p>
+<p><img src="image/No10Email-feature.png" alt="">
+<strong>Figure 1.</strong> From <em>The 11 slides that finally convinced Boris Johnson about global warming</em> <a href="https://www.carbonbrief.org/revealed-the-11-slides-that-finally-convinced-boris-johnson-about-global-warming">CarbonBrief.org</a></p>
+<p><tt><strong>From:</strong> Metamodel.blog</tt><br>
+<tt><strong>To:</strong> No. 10, Downing Street, London</tt><br>
+<tt><strong>Date:</strong> Tuesday, May 24, 2022</tt><br>
+<tt><strong>Subject:</strong> Why are the numbers so round?</tt></p>
+<p>Dear No. 10,</p>
+<p>I read with interest the article about the scientific briefing on climate that changed your mind about global warming.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The briefing underscores the importance of making science accessible to decision makers. One email leading up to that pivotal briefing includes an interesting nugget of a question (Figure 1). You asked, “why are the numbers so round”, referring to the 2050 target year, 1.5 degree warming, etc.? That is indeed an excellent question, appropriately coming from someone who lives in a house numbered 10.</p>
+<p>Like a politician who wants to move into 10 Downing Street but ends up at 11 instead, shooting past round numerical targets has been the subject of much discussion after the recently released IPCC climate report. Are we likely to overshoot the global warming target of 1.5°C or the net-zero target date of 2050? If the warming ends up being 1.6 or 1.7°C or net-zero is reached 5-10 years later, would climate cross a tipping point?<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> As there appears to be another UK climate change briefing in the offing,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> this letter attempts to explain the “roundness” of climate numbers.</p>
+<p>The sentence in that email snippet above that follows your “roundness” question suggests you are not sure if actual scientists wrote the IPCC reports. Rest assured that scientists were involved in writing the IPCC reports and coming up with the climate numbers. The roundness of the numbers is itself perhaps proof of that. In business, it is considered good practice to add false precision as a negotiating tactic: “if one party gives a round number, it gives the signal that the party doesn&rsquo;t really know what it&rsquo;s doing.”<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> For example, faux precision is one explanation why Elon Musk offered to buy Twitter at $54.20 a share, instead of $54 or $55 a share.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> But scientists aren&rsquo;t businessmen. When scientific thresholds are approximate, it is normal to round the numbers up or down, to avoid giving a sense of false precision and to make them memorable.</p>
+<p>Scientists have determined that the trapping of heat by increasing concentration of carbon dioxide and other atmospheric gases (known as greenhouse gases) is responsible for the global warming that is happening.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> Burning of fossil fuels used in transportation, power generation, and other human activities is increasing the concentration of these gases. As the globe warms, the climate changes from what we are used to, leading to harmful impacts like more heatwaves, intense rainfall events, and rising sea levels. We need to reduce the emission of the greenhouse gases to zero as soon as possible to stop further warming. The current goal is to eliminate carbon emissions by 2050, and to keep the warming below 1.5°C.</p>
+<p>You are right to wonder if 1.5 degrees sounds too round to be a scientific constant. Fundamental science constants typically have more digits in them. For example, the current hot controversy in fundamental physics is over whether the mass of the W boson is 80,357 MeV/c<sup>2</sup> or 80,433 MeV/c<sup>2</sup>.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> Whatever the correct value of that physics number, it will not affect government policy. Round climate numbers like 1.5 or 2.0, on the other hand, are quite important for policy even if they lack the exactitude of fundamental physical constants. They are inexact because climate is a highly complex system with many interacting physical, chemical, biological, and human components.</p>
+<p>An example of a useful round number is the recommended social distancing threshold for Covid avoidance.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> The World Health Organization recommends 1 meter distancing, and several countries follow that stringent recommendation. But some other countries recommend 1.5 meter distancing, the US recommends 1.8 meters (6 feet) and the UK recommends 2 meters.</p>
+<p>Which is the correct number for social distancing? The answer would be “the largest practical one.” The greater the social distancing, the lesser the health risk. Different numbers reflect the different risk tolerances, and different length units in the different countries.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> Some people take the Covid distancing thresholds literally, believing that their risk of catching Covid increases dramatically if they cross this threshold even slightly. But many other factors, such as the ventilation and mask efficacy, can have a larger impact on the risk of catching Covid than social distancing.</p>
+<p>Although social distancing illustrates the unit-dependence of thresholds, it is not the best analogy for climate thresholds. Because of the nonlinearity of climate impacts, the difference in harm between 1.5 and 2 degrees of global warming is far greater than that between 1.5 and 2 meters of social distancing. Every half degree of warming matters,<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> and many more regions will face serious harm as local warming thresholds are crossed.<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></p>
+<p>A better analogy for a climate threshold is your doctor telling you to keep your bad cholesterol level below 4.0 mmol/L (about 160 mg/dL in the US),<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup> rather than keep it below a threshold with more digits of precision, say, 4.123. There is no health “tipping point” that is triggered if you &ldquo;overshoot&rdquo;. You are unlikely to suffer a heart attack immediately if your bad cholesterol rises slightly above 4.0, but your risk will increase. If the average cholesterol level of the whole population increases, the number of cardiac disease-related deaths will increase rapidly.</p>
+<p><img src="image/barreling-down.png" alt=""></p>
+<p>The globe has already warmed 1.2°C above pre-industrial levels.<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup> Our predictions are that the Earth&rsquo;s climate is currently barreling down the slope of ever worsening climate impacts rather than headed towards a cliff at 1.5°C (or 2.0°C).<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup> The secret to success in climate mitigation, as it is in life, is to set challenging but achievable goals. A few years ago, 1.5°C appeared to be far enough in the future to serve as an achievable target for stabilizing global temperature, if aggressive steps to mitigate emissions were started immediately. It appears less achievable now, although exceeding the target in a single year is less worrying than the exceeding it in long term.<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup></p>
+<p>The roundness of the warming targets depends upon the temperature scale. Those who live outside the United States surely know that water boils at 100°C, a rather round number. That’s because the Celsius scale is defined that way. Water freezes at an even rounder 0°C. Again, that is because of the definition of the Celsius scale. These two scientific numbers completely define the temperature scale. <em>This means that no other scientific temperature numbers can be truly round — except by coincidence or because of rounding.</em></p>
+<p>On the Fahrenheit scale, the two commonly discussed warming thresholds, 1.5°C and 2°C, would correspond to 2.7 and 3.6°F respectively. In an alternate universe where everyone used the Fahrenheit scale, we might have chosen rounded warming targets of 3.0°F (1.67<sup>o</sup>C) or 3.5°F (and this letter might be addressed to 1600 Pennsylvania Avenue instead).</p>
+<p>We should work hard &ndash; starting now &ndash; to keep global warming below our chosen target, be it 1.5°C or 2.0°C, or something in-between. But if we overshoot by a small fraction of a degree, the world will not end. Global warming thresholds should be taken <strong>seriously, but not literally</strong>.</p>
+<h2 id="an-even-rounder-target-net-zero">An even rounder target: net-zero</h2>
+<p>What about another very round number, net-zero, or reducing carbon dioxide emissions to zero? Why is the zero-emission target more appropriate than a target of, say, 3 Gigatons per year or -3 Gigatons per year? (For reference, current fossil-sourced carbon dioxide emissions are about 36 Gigatons per year.) The roundness of net-zero turns out to be coincidental.</p>
+<p>Early climate mitigation research focused on keeping carbon dioxide concentrations constant, but that would have led to continued warming over centuries, until the ocean absorbed enough heat to reach equilibrium. This was referred to as “committed warming.” Subsequent research showed that if we reduce carbon emissions to zero, the land and ocean will continue to absorb carbon dioxide and steadily lower its concentration.<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup> Coincidentally, the cooling effect of this CO2 absorption roughly cancels the effect of continued ocean warming. This means that we can expect global temperatures to stabilize shortly after emissions go to zero. (Ideally, all carbon dioxide emissions should cease, but in practice some unavoidable positive emissions may need to be offset by yet-to-be-perfected negative emissions technology.)</p>
+<p>To explain it better: If the Earth is like the human body, carbon emissions keep putting additional blankets on the body.<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup> Land and ocean are continually removing about half of these extra blankets. The remaining extra blankets add to the warming of the body. If carbon emissions stop and the number of blankets stays constant, the warming will continue for several more minutes until the human body reaches a warmer equilibrium. In the case of climate, it would take several more centuries to reach the warmer equilibrium. But land and ocean will continue to remove the carbon dioxide blankets even after emissions stop, reducing the number of blankets. This permits temperature to reach equilibrium sooner — within a few seconds in the case of the human body and within a few decades for the climate system.</p>
+<p><img src="image/net-zero.png" alt=""></p>
+<p>If it were not for the coincidental cancellation between atmospheric carbon dioxide reduction and ocean heat uptake, we would have a less round (and non-zero) emissions target to stabilize global temperature. Alternatively, we may have had to choose a non-zero rate of warming as a practical mitigation target. Note that because of the uncertainty in climate and carbon cycle models, we cannot be absolutely sure that net-zero emissions will stabilize temperatures exactly:<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup> Global temperatures may still trend upward slightly when we reach net-zero, or possibly trend down a bit, if the uncertainty works in our favor.</p>
+<p>The year 2050 is the notional target for reaching net-zero. It was chosen for practical (and political) reasons based on assessments of how quickly emission reductions could be achieved. If we can reach net-zero by 2040 or 2045, all the better. What if we only reach net-zero by 2055 or 2060? We&rsquo;ll then have to bear the increasingly harmful impacts of the continued warming, but we aren&rsquo;t likely to cross a global climate tipping point.</p>
+<p>Sincerely,</p>
+<p><em>metamodel.blog</em></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.carbonbrief.org/revealed-the-11-slides-that-finally-convinced-boris-johnson-about-global-warming">Revealed: The 11 slides that finally convinced Boris Johnson about global warming</a> (Carbon Brief)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="/posts/predict-tipping-points/">Can we predict global climate tipping points?</a> (Metamodel.blog)&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://www.theguardian.com/environment/2022/apr/20/mps-to-get-scientific-briefing-on-climate-after-activists-hunger-strike">MPs to get scientific briefing on climate after activist’s hunger strike</a> (The Guardian)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://hbswk.hbs.edu/item/when-negotiating-a-price-never-bid-with-a-round-number">When Negotiating a Price, Never Bid with a Round Number</a> (Harvard Business School)&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p><a href="https://www.inc.com/jeff-haden/why-intelligent-minds-like-elon-musk-embrace-no-round-numbers-rule-of-negotiating-backed-by-science.html">Why Intelligent Minds Like Elon Musk Embrace the Science-Backed No Round Numbers Rule of Negotiating</a> (Inc.com)&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p><a href="https://www.ipcc.ch/assessment-report/ar6/">Sixth Assessment Report</a> (IPCC)&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p><a href="https://news.fnal.gov/2022/04/cdf-collaboration-at-fermilab-announces-most-precise-ever-measurement-of-w-boson-mass/">CDF collaboration at Fermilab announces most precise ever measurement of W boson mass to be in tension with the Standard Model</a> (Fermilab)&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p><a href="https://theprint.in/theprint-essential/1m-1-5m-2m-the-different-levels-of-social-distancing-countries-are-following-amid-covid/449425/">1m, 1.5m, 2m — the different levels of social distancing countries are following amid Covid</a> (ThePrint.in)&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p><a href="https://www.washingtonpost.com/world/europe/covid-social-distancing-one-meter-plus/2020/06/22/7614418a-afe0-11ea-98b5-279a6479a1e4_story.html">Two meters? One meter plus? Social distancing rules prompt fierce debate in U.K.</a> (Washington Post)&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p><a href="https://www.oxfordmartin.ox.ac.uk/blog/why-protesters-should-be-wary-of-12-years-to-climate-breakdown-rhetoric/">Why protesters should be wary of ‘12 years to climate breakdown’ rhetoric</a> (oxfordmartin.ox.ac.uk)&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p><a href="https://www.gq.com/story/eight-places-to-save-climate-change">The Razor&rsquo;s Edge of A Warming World</a> (GQ)&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p><a href="https://www.mayoclinic.org/tests-procedures/cholesterol-test/about/pac-20384601">Cholesterol test</a> (Mayo Clinic)&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p><a href="https://climate.copernicus.eu/how-close-are-we-reaching-global-warming-15degc">How close are we to reaching a global warming of 1.5°C?</a> (ECMWF/Copernicus)&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p><a href="https://blogs.scientificamerican.com/hot-planet/thinking-about-climate-on-a-dark-dismal-morning/">Thinking about Climate on a Dark, Dismal Morning</a> (Scientific American)&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p><a href="https://www.theguardian.com/environment/2022/may/09/climate-limit-of-1-5-c-close-to-being-broken-scientists-warn">Climate limit of 1.5C close to being broken, scientists warn</a> (The Guardian)&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16" role="doc-endnote">
+<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2007GL032388">Stabilizing climate requires near-zero emissions</a> (Geophysical Research Letters)&#160;<a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17" role="doc-endnote">
+<p>The actual greenhouse effect is more complicated than this, due to the shortwave feedback. See <a href="https://andthentheresphysics.wordpress.com/2022/04/20/the-greenhouse-effect-2/">The Greenhouse Effect</a> (And Then There&rsquo;s Physics)&#160;<a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18" role="doc-endnote">
+<p><a href="https://bg.copernicus.org/articles/17/2987/2020/">Is there warming in the pipeline? A multi-model analysis of the Zero Emissions Commitment from CO2</a> (Biogeosciences)&#160;<a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </article>
+
+<hr>
+
+  
+  
+  <div class="mt-2 mb-4 ml-6 mr-6">
+    <a class="link-reverse" href="/posts/model-meritocracy/?ref=footer">
+    <span class="px-8 py-3 rounded transition-colors text-gray-500 dark:text-gray-400">« Prev:
+    <span class="text-gray-800 dark:text-gray-200">
+	 How to judge a model beauty contest?
+    </span>
+    </span>
+    </a>
+  </div>
+  
+  
+
+  
+  
+  <div class="mb-4 ml-6 mr-6"> <span class="px-8 py-3 rounded transition-colors text-gray-500 dark:text-gray-400">
+    <em>
+
+    To be reliably informed of new posts, please follow using Substack (email newsletter), Feedly (blog aggregator), or
+    other RSS feed option below. Alternatively, you can just check this website once every two weeks or so.  (If you
+    only follow me on Twitter, you may not always see my tweets announcing new posts due to the algorithmic ranking policy.)
+    
+    </em>
+  </span>
+</div>
+
+  <div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-6 py-1 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div>
+      <div class="text-2xl mb-2">Follow:</div>
+      <p class="opacity-60"></p>
+    </div>
+    <ul class="flex">
+      
+      <li>
+        <a
+          href="https://substack.metamodel.blog"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      Substack (substack.metamodel.blog)
+        </a>
+      </li>
+      
+
+      <li>
+        <a
+          href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmetamodel.blog%2Findex.xml"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      Feedly
+        </a>
+      </li>
+
+      
+      <li>
+        <a
+          href="https://metamodel.blog//index.xml"
+          target="_blank"
+          rel="noopener"
+          aria-label="RSS"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      RSS
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a
+          href="https://twitter.com/rsarava"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+      Twitter (@RSarava)
+        </a>
+      </li>
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+  &nbsp; 
+  <div class="container px-6 py-1 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="text-2xl mb-2" style="color: #1DA1F2">Short comments via Twitter (click on tweet shown below to reply):</div>
+  </div>
+  <blockquote id="tweet-container" class="twitter-tweet"></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+  window.onload = function () {
+  const isDark = localStorage.getItem('darkmode');
+  twttr.widgets.createTweet(
+    '1529081032124813312', 
+    document.getElementById('tweet-container'),
+    {
+      align: 'center',
+      dnt: 'true',
+      cards: 'hidden',
+      theme: (isDark && isDark === 'dark') ? 'dark' : ''
+    }
+  );
+  };
+  </script>
+  &nbsp; 
+  
+
+  
+  <div id="comments" class="container px-6 py-1 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="text-2xl mb-2">Long comments (needs login):</div>
+  </div>
+
+  <div id="remark42" class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4"></div>
+  
+
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+  This website was generated using open-source
+  <a href="https://gohugo.io/"><em>Hugo</em></a> software, with a
+  <a href="https://github.com/mitotic/metablog"><em>customized</em></a> version 
+  of the
+  <a href="https://github.com/apvarun/blist-hugo-theme"><em>Blist</em></a>
+  theme.
+ 
+    
+    Copyright © 2022 - R. Saravanan.
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://metamodel.blog/js/scripts.min.js"></script>
+
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F0HRT3X34B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-F0HRT3X34B', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+    if (window.REMARK42 && window.REMARK42.changeTheme) window.REMARK42.changeTheme(localStorage.getItem('darkmode'));
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const isDark = localStorage.getItem('darkmode');
+  if (isDark && isDark === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+}
+
+  
+  document.querySelector('.open-search').addEventListener('click', mobileWorkaround); 
+  document.querySelector('.toggle-dark-mode').addEventListener('click', mobileWorkaround); 
+  function mobileWorkaround() {
+     toggleMenu();
+  }
+
+</script>
+
+
+<script>
+  var remark_config = {
+    host: "https://metamodel.blog/remark42",
+    site_id: "remark42.metamodel.blog",
+    url: "https://metamodel.blog/posts/why-round-numbers/",
+    components: ['embed', 'counter'],
+  };
+  remark_config.theme = localStorage.getItem('darkmode') ? localStorage.getItem('darkmode') : 'light';
+
+  (function(c) {
+    for(var i = 0; i < c.length; i++){
+      var d = document, s = d.createElement('script');
+      s.src = remark_config.host + '/web/' + c[i] +'.js'; 
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
+  })(remark_config.components || ['embed']);
+</script>
+
+</body>
+</html>
